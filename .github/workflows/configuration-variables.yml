@@ -43,7 +43,7 @@ jobs:
       # Notice how we combine workflow-level, job-level,
       # step-level, and GitHub config vars together.
       # ------------------------------------------------
-      - name: "Welcomeh"
+      - name: "Greetings"
         run: echo "$Greet!  This is  $First_Name working on $gitlab project ${{ vars.PROJECT_ID }}!"
         env:
           First_Name: Somesh
