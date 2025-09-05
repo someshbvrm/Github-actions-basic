@@ -20,10 +20,10 @@ on:
 # Available to ALL jobs and steps in this workflow
 # ------------------------------------------------------
 env:
-  cloud: google-cloud
+  gitlab: Gitlab Actions
 
 jobs:
-  greeting_job:
+  Greeting_job:
     # --------------------------------------------------
     # Job runs on the latest Ubuntu virtual machine
     # --------------------------------------------------
@@ -34,7 +34,7 @@ jobs:
     # Available to all steps inside this job
     # --------------------------------------------------
     env:
-      Greeting: Hello
+      Greet: Hello
 
     steps:
       # ------------------------------------------------
@@ -43,10 +43,10 @@ jobs:
       # Notice how we combine workflow-level, job-level,
       # step-level, and GitHub config vars together.
       # ------------------------------------------------
-      - name: "Say Hello to Vishal"
-        run: echo "$Greeting $First_Name is using $cloud with project ${{ vars.PROJECT_ID }}!"
+      - name: "Welcomeh"
+        run: echo "$Greet!  This is  $First_Name working on $gitlab project ${{ vars.PROJECT_ID }}!"
         env:
-          First_Name: Vishal
+          First_Name: Somesh
           # Step-level variable (only available in this step)
 
 # ------------------------------------------------------
