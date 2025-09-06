@@ -1,8 +1,8 @@
 provider "aws" {
-  region = var.aws_region
+  region = "eu-north-1"
 }
 
 resource "aws_s3_bucket" "main" {
-  bucket = var.s3_bucket_name
+  bucket = "sample-bucket"
   force_destroy = true
 }
