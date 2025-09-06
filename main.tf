@@ -3,6 +3,6 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "main" {
-  bucket = "sample-bucket"
+  bucket = "sample3498503-bucket"
   force_destroy = true
 }
